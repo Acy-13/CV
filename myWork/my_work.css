@@ -1,0 +1,91 @@
+.navbar {
+    width: 100%;
+  
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    background: aliceblue;
+    transition:0.7s;
+  }
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 1.2rem;
+    color: rgb(54, 44, 44);
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+  .navbar a:hover {
+    background-color: rgb(128, 218, 168);
+  }
+  .active {
+    background-color: rgb(81, 169, 247);
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+body{
+    font-family: 'Sofia Sans', sans-serif;
+    background-color:#A8F0B7;
+    margin:0;
+    
+}
+
+main{
+    display: flex;
+}
+
+ul{
+  list-style-type: none;
+  flex-direction: row;
+  
+  
+}
+li{
+  display:inline-block;
+}
+footer {
+  padding:2rem;
+  font-size: 1.6rem;
+  justify-content: center;
+  background-color: aliceblue;
+  color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  
+}
+#footer-icons {
+  display: flex;
+  justify-content: center;
+}
+#footer-icons p {
+  margin:1rem;
+}
+
+#footer-icons i{
+  font-size: 4rem;
+}
+
+#drib{
+  color:pink;
+}
+#insta{
+    background-color:rgb(214,41,118);
+    }
+#linkedin{
+  color:#0072b1;
+}
+section img {
+  width:30%;
+}
+main{
+  margin-left:2rem;
+}

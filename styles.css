@@ -1,0 +1,123 @@
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+    color: #EBB7E1
+}
+body {
+  font-family: "Sofia Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/forest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
+}
+.hero-content {
+  position: relative;
+  
+  color: white;
+  text-align: center;
+  margin: 0.625rem;
+}
+.hero-title {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.hero-subtitle {
+  font-size: 3rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+.navbar {
+    width: 100%;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    transition:.,7s;
+    background: aliceblue;
+      }
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 1.2rem;
+    color: rgb(54, 44, 44);
+    text-decoration: none;
+    font-size: 1.7rem;
+  }
+  .navbar a:hover {
+    background-color: rgb(128, 218, 168);
+  }
+  .active {
+    background-color: rgb(81, 169, 247);
+  }
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+.heading {
+    align-self: flex-start;
+}
+p{
+    align-self: flex-start;  
+}
+
+main{
+    font-size: 1.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    border-radius: 8px;
+     max-width: 35rem;
+    max-height: 35rem;
+    
+  }
+
+.section-part{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgb(125, 123, 156) 0%, rgba(88,135,124,1) 35%, rgba(74,194,218,1) 100%);
+}
+
+.section-project{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(152, 149, 203) 0%, rgb(168, 212, 201) 25%, rgb(183, 167, 200) 50%);
+}
+
+
+  @media (width >= 1200px) {
+    .section-part {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .section-part div {
+      padding: 2rem;
+    }
+  }
