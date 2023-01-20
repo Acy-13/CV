@@ -1,39 +1,16 @@
-.navbar {
-    width: 100%;
-  
-    overflow: auto;
-    position: sticky;
-    top: 0;
-    background: aliceblue;
-    transition:0.7s;
-  }
-  
-  .navbar a {
-    float: left;
-    text-align: center;
-    padding: 1.2rem;
-    color: rgb(54, 44, 44);
-    text-decoration: none;
-    font-size: 1.7rem;
-  }
-  .navbar a:hover {
-    background-color: rgb(128, 218, 168);
-  }
-  .active {
-    background-color: rgb(81, 169, 247);
-  }
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
 
 body{
-    font-family: 'Sofia Sans', sans-serif;
-    background-color:#A8F0B7;
-    margin:0;
-    
+  margin:0;
+  background-color:#A8F0B7;
+  
+}
+
+.navbar a{
+  font-size:17px !important;
+}
+
+h1{
+  font-size: 1.8rem;
 }
 
 main{
@@ -48,7 +25,7 @@ main{
 }
 
 #info-box {
-    width:25%;
+    max-width:25%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -57,16 +34,19 @@ main{
     text-align: center;
     color:#A8F0B7;
     font-size: large;
+    padding-bottom: 2rem;
+    
 
   }
   #info-box p{
-    margin:0.75rem;
+    margin:0.8rem;
+   
   }
 
 #info-box img{
     width: 35%;
-   
     margin-top: 4rem;
+    
 }
 #kontakt{
     display: flex;
@@ -77,6 +57,8 @@ main{
     align-content: center;
     color:#A8F0B7;
 }
+
+
 
 #kontakt p{
     margin: 1rem;
@@ -90,3 +72,30 @@ main{
     padding: 0 2rem;;
 }
 
+button{
+  padding:1rem 3rem;
+  align-items: center;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color:rgb(128, 218, 168);
+  cursor: pointer;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:large;
+  font-weight: bolder;
+  color:#020203;
+}
+
+@media screen and (max-width: 576px) {
+  main {
+    flex-direction: column;
+  }
+  #info-box {
+    min-width: 100%;
+  }
+  #alina{
+    font-size: 1.75rem;
+    align-self: center;
+  }
+
+
+}

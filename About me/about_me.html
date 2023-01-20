@@ -1,56 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!--Deklarerar att dokumentet är en webbsida-->
+<html lang="en"> <!--Språkattribut - mycket viktigt för tillgänglighet-->
 
-<head>
+<head><!--Alla nödvändiga länkar i head -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="About Alina Vaittinen" content="portfolio"><!--Lade till metataggar för SEO -->
+    <meta name="keywords" content="HTML, CSS, portfolio, UX">
+    <meta name="author" content="Alina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--<<--För att få kompatibilitet på mobilskärmar -->
     <link rel="stylesheet" href="aboutMeStyle.css">
+    <link rel="stylesheet" href="../common/commonstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/04afbe8c03.js" crossorigin="anonymous"></script>
     <title>About me</title>
+    <!--Titeln på sidan som syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
 </head>
+<!--Allt innehåll inuti body -->
 
 <body>
     <header>
-    <div class="navbar">
-        <a href="../landing_page.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a class="active" href="About me/about_me.html"><i class="fa-sharp fa-solid fa-circle-info"></i> About me</a>
-        <a href="../myWork/my_work.html"><i class="fa-solid fa-briefcase"></i> My Work</a>
-        <a href="../Contact/contact.html"><i class="fa fa-fw fa-user"></i> Contact</a>
-    </div>
-</header>
-    <main>
+        <nav class="navbar"><!--Navigationsbar inom <nav> för tillgänglighet, landmark -->
+            <a href="../home.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a class="active" href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> About me</a>
+            <a href="../myWork/my_work.html"><i class="fa-solid fa-briefcase"></i> My Work</a>
+            <a href="../Contact/contact.html"><i class="fa-sharp fa-solid fa-address-card"></i> Contact</a>
+    
+        </nav>
         
-        <div id="info-box">
+    </header>
+    <main>
+        <!--Huvudinnehåll, landmark elements -->
+        <div id="info-box"><!--Behållare för att gruppera element som hör ihop -->
+            <!--Bild och bildlänk-->
+            <img src="../images/profilbild.jpg"
+                alt="Portrait of smiling woman"><!--Alttext för skärmläsare eller om bilden inte laddas -->
 
-            <img src="../images/profilbild.jpg" alt="">
-            
-            <h3>About me</h3>
-            <p>Jag söker fast jobb som UX-designer.
-                Ett jobb där jag kan sätta alla mina kunskaper i verket. Jag jobbar hårt och dedikerat och brinner för lättanvända produkter.</p>
-                <p><span lang="sv"></span></p>
-            
-            <h3>Contact Info</h3>
-<div id="kontakt">
-<p><i class="fa-sharp fa-solid fa-envelope"></i><a href="mailto:alina.vaittinen@gmail.com"> Email </a></p>
-<p><i class="fa-sharp fa-solid fa-phone"></i> Phone </p>
-</div>
+            <h1>About me</h1><!--Huvudrubrik -->
+            <!--En paragrafs displayvärde är block om det inte ändras, och skapar då en egen rad -->
+            <p>I am a woman born in 1985, with a long career in the service sector. I
+                am looking for a job as an UX designer. A job where I can put all my knowledge put to work.
+                I work hard and dedicated. My passion is to make every product easy and delightful to use.
+            </p>
+            <!--Knapp som leder till Contactsidan -->
+            <button><a href="../Contact/contact.html">Contact me</a></button>
+
         </div>
+        <!--En div med id för att jag ska kunna ändra layout beroende på skärm -->
         <div id="cv-box">
-            <h1 id="alina">Alina Vaittinen</h1>
-            <h3>Jobb</h3>
-            <ul>
-                
-                <li>Tågvärd, pendeltåg</li>
+            <h2 id="alina">Alina Vaittinen</h2> <!--Huvudrubrik -->
+            <h3>Jobb</h3><!--Underrubrik-->
+            <ul><!--Onumrerad lista med bullets -->
+
+                <li>Tågvärd, pendeltåg</li><!--Listinnehåll-->
                 <li>Tågvärd, Arlanda Express</li>
                 <li>Frukostvärdinna, Rica Talk Hotel</li>
             </ul>
             <h3>Utbildning</h3>
             <ul>
-                
+
                 <li>UX-designer med kravkompetens, Chas Academy</li>
                 <li>Advokatsekreterare, Jensen vuxenutbildning</li>
                 <li>Mediaprogrammet, Tumba Gymnasium</li>
@@ -59,7 +68,25 @@
 
 
 
-    </main>
+    </main><!--Slut på huvudinnehåll -->
+    <!--Sidfot med länkar -->
+    <footer>
+
+        <p><strong>Author: Alina Vaittinen, 2023</strong></p>
+        <div id="footer-icons">
+            <p><i class="fa-sharp fa-solid fa-envelope"></i> Mail </p> <!--ikoner från Font awesome -->
+            <p><i class="fa-sharp fa-solid fa-phone"></i> Telefon </p>
+
+
+            <p><i id="linkedin" class="fa-brands fa-linkedin"></i> LinkedIn</p><!--Sociala medier-ikoner -->
+            <p><i id="drib" class="fa-brands fa-dribbble"></i> Dribbble</p>
+            <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
+        </div>
+
+
+
+
+    </footer>
 </body>
 
 </html>

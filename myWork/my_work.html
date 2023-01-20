@@ -1,65 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!--Deklarerar att dokumentet är en webbsida-->
+<html lang="en"> <!--Språkattribut - mycket viktigt för tillgänglighet-->
 
-<head>
+<head><!--Alla viktiga länkar -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<<--För att få kompatibilitet på mobilskärmar -->
+    <meta name="work Alina Vaittinen" content="portfolio"><!--Lade till metataggar för SEO -->
+    <meta name="keywords" content="HTML, CSS, portfolio, UX">
+    <meta name="author" content="Alina">
     <link rel="stylesheet" href="my_work.css">
+    <link rel="stylesheet" href="../common/commonstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/04afbe8c03.js" crossorigin="anonymous"></script>
     <title>My Work</title>
+    <!--Titeln på sidan som syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
 </head>
 
-<body>
+<body><!--Allt innehåll inuti body -->
     <header>
-        <div class="navbar">
+        <nav class="navbar"><!--Navigationsbar inom <nav> för tillgänglighet -->
 
 
-            <a href="../landing_page.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="../home.html"><i class="fa-solid fa-house"></i> Home</a>
             <a href="../About me/about_me.html"><i class="fa-sharp fa-solid fa-circle-info"></i> About me</a>
             <a class="active" href="#"><i class="fa-solid fa-briefcase"></i> My Work</a>
-            <a href="../Contact/contact.html"><i class="fa fa-fw fa-user"></i> Contact</a>
-        </div>
+            <a href="../Contact/contact.html"><i class="fa-sharp fa-solid fa-address-card"></i> Contact</a>
+        
+        </nav>
     </header>
     <main>
-        <div>
-            <h1>My projects</h1>
+        <!--Behållare för att gruppera element som hör ihop -->
+        <h1>My work</h1><!--Huvudrubrik -->
+        <h2>School projects</h2>
 
-            <section>
-                <section class="section-Filmia">
-                    <img src="../images/Filmia.jpg" />
-                    <p>
-                    <h2>Case study</h2>
-                    A movie app for a delightful movie experience, at your preferred speed.</p>
-                </section>
-                <section>
-                    <section class="section-matApp">
-                        <img src="../images/foodApp.jpg">
-                        <p>
-                        <h2>Case study</h2>
-                        A fast food app with simple design and easy use.</p>
-                    </section>
-                </section>
-        </div>
+        <section>
+            <section class="project-container">
+                <img src="../images/Filmia.jpg" alt="Bild på fyra olika skärmar i filmapp">
+                <h3>Case study "Filmia"</h3><!--Underrubrik -->
+                <p>A movie app for a delightful movie experience, at your preferred speed.</p><!--Paragraf med text -->
+            </section>
+            <section class="project-container">
+                <img src="../images/foodApp.jpg" alt="Bild på fyra aolika mobilskärmar">
+                
+                <h3>Case study "Fast Lunch"</h3>
+                <p>A fast food app with simple design and easy use.</p>
+            </section>
+            <section class="project-container">
+                <img src="../images/dummyProjekt.jpg" alt="Bild på mobil">
+                
+                <h3>(Fake project) Overview</h3>
+                <p>Interdum facilisis risus lobortis a quam vitae tristique. Eu aliquet turpis sed dignissim et faucibus
+                quisque enim sed.
+                Purus erat dolor sed integer aliquam nisl ut condimentum vestibulum.</p><!--Dummytext i paragraf -->
+                
+                <h3>Background</h3>
+                <p>Mollis sit habitasse at feugiat urna faucibus etiam volutpat maecenas. Massa diam
+                commodo at
+                montes aliquet nulla scelerisque eget. At ipsum lobortis tincidunt magna at. Feugiat viverra aliquet sit
+                ipsum justo pretium morbi.</p>
+                <h4>Problem space</h4>
+                <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
+                <h4>Guiding questions</h4>
+                <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
+                <h3>Process</h3>
+                <p>Morbi pretium lacus llentesque arcu.
+                Tempus eget urna eu ornare amet euismod. Diam enim egestas tellus lectus cursus a neque mattis
+                suspendisse. Neque dignissim aliquet bibendum
+                parturient faucibus vitae odio lorem enim. Justo auctor quam aliquam platea.</p>
+            </section>
+
+
     </main>
-    <footer>
+    <footer><!--Footerelement i slutet på varje sida -->
 
-        <p>Author: Alina Vaittinen, 2023</p>
+        <p><strong>Author: Alina Vaittinen, 2023</strong></p>
         <div id="footer-icons">
             <p><i class="fa-sharp fa-solid fa-envelope"></i> Mail </p>
             <p><i class="fa-sharp fa-solid fa-phone"></i> Telefon </p>
-    
-    
+
+
             <p><i id="linkedin" class="fa-brands fa-linkedin"></i> Linkedin</p>
             <p><i id="drib" class="fa-brands fa-dribbble"></i> Dribbble</p>
             <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
         </div>
-      
-        
-
 
     </footer>
-</body>
+</body> <!--Slut på allt innehåll -->
 
 </html>

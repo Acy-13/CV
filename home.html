@@ -1,0 +1,109 @@
+<!DOCTYPE html><!--Deklarerar att dokumentet är en webbsida-->
+<html lang="en"> <!--Språkattribut - mycket viktigt för tillgänglighet-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="home Alina Vaittinen" content="portfolio"><!--Lade till metataggar för SEO -->
+    <meta name="keywords" content="HTML, CSS, portfolio, UX">
+    <meta name="author" content="Alina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--<<--För att få kompatibilitet på mobilskärmar -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Titel på denna sida--><!--Titeln som syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
+    <title>Home</title>
+    <!--Alla länkar dokumentet hänvisar till lägg här i head-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="common/commonstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/04afbe8c03.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body><!--Allt innehåll inuti body -->
+    <header><!--Navigationsbar med länkar till andra sidor jag gjort inom <nav> för tillgänglighet-->
+        <nav class="navbar">
+
+
+            <a class="active" href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="../CV/About me/about_me.html"><i class="fa-sharp fa-solid fa-circle-info"></i> About me</a>
+            <a href="../CV/myWork/my_work.html"><i class="fa-solid fa-briefcase"></i> My Work</a>
+            <a href="../CV/Contact/contact.html"><i class="fa-sharp fa-solid fa-address-card"></i> Contact</a>
+        </nav>
+    </header>
+    <main> <!--Huvudinnehåll -->
+
+
+
+        <!--Min hero banner -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1 class="hero-title"> <!--Huvudrubrik, använd endast en h1 per sida -->
+                    Welcome to Alina Vaittinen's page
+                </h1>
+
+                <h2 class="hero-subtitle"><!--Rubrik lite lägre hieraki än h1-->
+                    I offer UX design for a better user experience
+                </h2>
+
+
+
+            </div>
+            <!--Stycke liten presentation -->
+        </section>
+        <section class="section-part">
+            <img src="images/profilbild.jpg" alt="Portrait of a smiling woman"><!--Bild-element och alternativ bildtext-->
+
+            <div><!--Behållare för att gruppera element som hör ihop -->
+                <h2 class="heading"> <!--Rubrik -->
+                    👋 Hi!
+                </h2>
+
+
+                <p>I'm Alina.</p>
+                <p>I am a UX designer. I want to make life easy. Never waste time on bad design!</p>
+            </div>
+
+
+        </section>
+        <!--Stycke om mina projekt -->
+        <section class="section-project">
+            <img src="images/Filmia.jpg" alt="pictures from a movie app"/>
+            <h3>The movie app Filmia</h3> <!--Underrubrik, lägre hieraki än h1-h2 -->
+            <p>Case study. School project. I chose a cinematic design and focused on having all the quick information
+                you need to pick a movie. In the player it was important to be able to choose playback speed and also an easy
+                playback and forward button.</p>
+        </section>
+        <a href="myWork/my_work.html">
+            <button class="projects"><!--Knapp med länk till My Work-sidan-->
+                More projects
+            </button>
+        </a>
+           
+    </main>
+    <footer><!--Footerelement i slutet på sidan med författare och länkar -->
+
+        <p><strong>Author: Alina Vaittinen, 2023</strong></p>
+        <div id="footer-icons">
+            <p><i class="fa-sharp fa-solid fa-envelope"></i> Mail </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i> Telefon </p>
+
+
+            <p><i id="linkedin" class="fa-brands fa-linkedin"></i> LinkedIn</p>
+            <p><i id="drib" class="fa-brands fa-dribbble"></i> Dribbble</p>
+            <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
+        </div>
+
+
+
+
+    </footer>
+</body>
+<!--Slut på allt innehåll som syns -->
+
+</html>

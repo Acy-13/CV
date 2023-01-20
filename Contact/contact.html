@@ -1,44 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><!--Deklarerar att dokumentet är en webbsida-->
+<html lang="en"><!--Språkattribut - mycket viktigt för tillgänglighet-->
+
+<head><!--Alla nödvändiga länkar -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--<<--För att få kompatibilitet på mobilskärmar -->
+    <meta name="contact Alina Vaittinen" content="portfolio"><!--Lade till metataggar för SEO -->
+    <meta name="keywords" content="HTML, CSS, portfolio, UX">
+    <meta name="author" content="Alina">
     <link rel="stylesheet" href="contactStyle.css">
+    <link rel="stylesheet" href="../common/commonstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/04afbe8c03.js" crossorigin="anonymous"></script>
-    <title>Contact</title>
+    <title>Contact</title> <!--Namn på sidan --><!--Syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
 </head>
 
-<body>
+<body><!--Allt innehåll inuti body -->
     <header>
-        <div class="navbar">
-            <a href="../landing_page.html"><i class="fa-solid fa-house"></i> Home</a>
+        <nav class="navbar"><!--Navigationsbar inom <nav> för tillgänglighet -->
+            <a href="../home.html"><i class="fa-solid fa-house"></i> Home</a>
             <a href="../About me/about_me.html"><i class="fa-sharp fa-solid fa-circle-info"></i> About me</a>
             <a href="../myWork/my_work.html"><i class="fa-solid fa-briefcase"></i> My Work</a>
-            <a class="active" href="#"><i class="fa fa-fw fa-user"></i> Contact</a>
-        </div>
+            <a class="active" href="#"><i class="fa-sharp fa-solid fa-address-card"></i> Contact</a>
+        
+        </nav>
     </header>
-    <div>
-    <h3 id="rubrik">Contact Me!</h3>
+    <main>
+    <div id="form-container"><!--Divbehållare för att gruppera element som hör ihop -->
+        <h1 id="rubrik">Contact Me!</h1><!--Huvudrubrik, endast en per sida-->
 
-    <div id="kontakt">
-    <p><i class="fa-sharp fa-solid fa-envelope"></i> Mejl </p>
-    <p><i class="fa-sharp fa-solid fa-phone"></i> Telefon </p>
+        <!--Kontaktformulär -->
+        <form action="/action_page.php" method="get">
+            <label for="Name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Type your message here"></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" placeholder="Enter a valid email address">
+            <input type="submit" value="Submit message">
+        </form>
+        <!--För att få avstånd mellan dessa gjorde jag margin-top på Kontakt-->
     </div>
-            
-            <div id="medier">
-                
-                    <h3>Sociala medier</h3>
-                    <p><i class="fa-brands fa-linkedin"></i> Linkedin</p>
+    <div id="kontakt">
+        <button
+            class="contact-btn"><!--Två knappar för antingen mejla eller ringa, obs har inte lagt in telefonnummer -->
+            <i class="fa-sharp fa-solid fa-envelope"></i><a href="mailto:alina.vaittinen@gmail.com"> Mail</a>
 
-                    <span>
-                        <i class="fa-brands fa-dribbble"></i>
-                        Dribbble
-                    </span>
-                    <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+        </button>
 
-                
-            </div>
+        <button class="contact-btn">
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            Phone
+        </button>
+
+
+    </div>
+
+    <!--Andra sätt att nå mig via sociala medier -->
+    <h4 id="social-media-headline">Social media</h4>
+    <div id="treMedier">
+        <p id="social-ikoner"><i id="linkedin" class="fa-brands fa-linkedin"></i> LinkedIn</p>
+
+        <span>
+            <i id="dribb" class="fa-brands fa-dribbble"></i>
+            Dribbble
+        </span>
+        <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
+
+
+    </div>
+</main>
+    <footer>
+
+        <p><strong>Author: Alina Vaittinen, 2023</strong></p>
+        <div id="footer-icons">
+            <p><i class="fa-sharp fa-solid fa-envelope"></i> Mail </p>
+            <p><i class="fa-sharp fa-solid fa-phone"></i> Telefon </p>
+
+
+            <p><i id="linkedin" class="fa-brands fa-linkedin"></i> LinkedIn</p>
+            <p><i id="drib" class="fa-brands fa-dribbble"></i> Dribbble</p>
+            <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
+        </div>
+
+    </footer>
 </body>
+
 </html>

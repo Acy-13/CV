@@ -1,54 +1,132 @@
-body {
-  font-family: "Sofia Sans", sans-serif;
-}
-.navbar {
-  width: 100%;
 
-  overflow: auto;
-  position: sticky;
-  top: 0;
-  background: aliceblue;
-  transition:0.7s;
+
+button{
+  width:7rem;
+  padding:0.5rem;
+  background-color: #51a9f7;
+  margin:0 2rem;
+  
+}
+#rubrik{
+  justify-content: center;
 }
 
-.navbar a {
-  float: left;
-  text-align: center;
-  padding: 1.2rem;
-  color: rgb(54, 44, 44);
-  text-decoration: none;
-  font-size: 1.7rem;
-}
-.navbar a:hover {
-  background-color: rgb(128, 218, 168);
-}
-.active {
-  background-color: rgb(81, 169, 247);
-}
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
-}
 
 #kontakt {
+  margin-top:2.2rem;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-evenly;
+  
+  
 }
-#medier {
+
+#form{
   display: flex;
   flex-direction: column;
-  text-align: center;
   align-items: center;
-  justify-content: center;
-  align-content: center;
+ 
+}
+
+form{
+  width: 80%;
+}
+input[type=submit]{
+  padding:1rem 2rem;
+  align-items: center;
+  border: none;
+  width:100%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color:#80daa8;
+  cursor: pointer;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  font-weight: bolder;
+  color:#020203;
+}
+
+input[type=text],input[type=email], textarea{
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+}
+
+
+#treMedier {
+  display: flex;
+  flex-direction: row;
+  text-align:center;
+  align-items:center;
+  align-self: center;
+  justify-content: space-evenly;
+  
+}
+
+#linkedin{
+  color:#0072b1;
+  
+}
+#social-ikon{
+  background-color: #B2215A;
+}
+
+
+#dribb{
+  color: #B2215A;
+  background-color: #E74D89;
+  border-radius: 50%;
+}
+#insta{
+  color: #fff;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 1px 5px rgba(0,0,0,.25);
+
+}
+#medier p {
+  margin:2rem;
+  
 }
 #rubrik {
   display: flex;
 }
 
+#form-container{
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-media-headline{
+  margin-bottom: 0.1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+
+  #tremedier {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+}
+@media screen and (min-width:1200px){
+  #treMedier{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+    align-content: center;
+  
+  }
+}
+
+  
