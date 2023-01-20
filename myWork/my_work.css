@@ -16,6 +16,7 @@ main{
 .project-container{
   display: flex;
   flex-direction: column;
+  margin-bottom: 3.5rem;
 }
 .project-container p, .project-container h3, h4{
   margin: 1rem 2rem;
