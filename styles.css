@@ -128,7 +128,7 @@ section p, h2, h3{
  
 }
 
-  @media (width >= 1200px) {
+  @media only screen and (min-width: 992px) {
     .section-part {
       display: flex;
       flex-direction: row;
@@ -142,8 +142,11 @@ section p, h2, h3{
     }
       
     
-    #section-project {
+    #section-project p{
+     
       margin:5rem;
+    
      
   }
+ 
 }
