@@ -43,6 +43,7 @@ body {
   margin-bottom: 0;
 }
 .hero-subtitle {
+  font-family: Montserrat;
   font-size: 2rem;
   font-weight: 200;
   margin-top: 1rem;
@@ -66,6 +67,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-grow:8;
+    filter: brightness(125%);
 }
 img {
     border-radius: 12px;
@@ -75,11 +77,31 @@ img {
   }
 
 
-.section-part{
-  background: rgb(2,0,36);
+.section-part {
+  
   background: linear-gradient(90deg, rgb(125, 123, 156) 0%, rgba(88,135,124,1) 35%, rgb(76, 180, 200) 100%);
-  filter: brightness(125%);
+  
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.section-part div {
+ 
+  margin: 0.5rem;
+  width: 90%;
+}
+
+.section-part img {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+ 
+}
+
+.section-part p {
+  font-size: 1.15rem;
 }
 
 .section-project{
@@ -106,6 +128,7 @@ width: 100vw;
   font-weight: bolder;
   color:#020203;
   text-decoration:none;
+  filter: brightness(80%);
 }
 section p, h2, h3{
   padding: 0 5% 0 5%;
@@ -114,39 +137,53 @@ section p, h2, h3{
 
 
 
-@media (width <= 600px) {
+@media (width <= 576px) {
   .hero-title {
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 0;
   }
   .hero-subtitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
     margin-top: 1rem;
   }
- 
+  main{
+    
+  }
+  .projects{
+    filter: brightness(80%);
+  }
+  
+ .section-part img {
+  width: 90%;
+ }
+
+ .section-part div{
+  box-shadow:none;
+ }
 }
 
   @media only screen and (min-width: 992px) {
     .section-part {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      justify-content: space-around;
     }
     .section-part div {
-      padding: 2rem;
-      margin:0.5rem;
       display: flex;
     flex-direction: column;
+    width: 50%;
+    border-radius: 0 50px 50px 50px;
+    background-color: #b5d9f8;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
-      
-    
-    #section-project p{
-     
-      margin:5rem;
-    
-     
-  }
+    main{
+      filter: brightness(100%);
+    }
+    .projects{
+      filter: brightness(100%);
+    }
+   
  
 }

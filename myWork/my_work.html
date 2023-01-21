@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="my_work.css">
     <link rel="stylesheet" href="../common/commonstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/04afbe8c03.js" crossorigin="anonymous"></script>
     <title>My Work</title>
     <!--Titeln på sidan som syns i webbläsarfönstret. Inget annat i headelementet syns förutom titeln -->
@@ -19,7 +20,8 @@
 
 <body><!--Allt innehåll inuti body -->
     <header>
-        <nav class="navbar"><!--Navigationsbar inom <nav> för tillgänglighet -->
+        <nav class="navbar"><!--Navigationsbar inom <nav> för tillgänglighet. Sticky position ungefär halvvägs,
+            så man hinner se var man är och kan byta sida-->
 
 
             <a href="../home.html"><i class="fa-solid fa-house"></i> Home</a>
@@ -48,26 +50,38 @@
             </section>
             <section class="project-container">
                 <img src="../images/dummyProjekt.jpg" alt="Bild på mobil">
+
+                <div class="project-details-container">
+                    <h2>(Fake project) Overview</h3>
+                    <p>Interdum facilisis risus lobortis a quam vitae tristique. Eu aliquet turpis sed dignissim et faucibus
+                    quisque enim sed.
+                    Purus erat dolor sed integer aliquam nisl ut condimentum vestibulum.</p><!--Dummytext i paragraf -->
+                    <div class="project-details">
+                        <div>
+                            <h3>Background</h3>
+                            <p>Mollis sit habitasse at feugiat urna faucibus etiam volutpat maecenas. Massa diam
+                            commodo at
+                            montes aliquet nulla scelerisque eget. At ipsum lobortis tincidunt magna at. Feugiat viverra aliquet sit
+                            ipsum justo pretium morbi.</p>
+                            <h4>Problem space</h4>
+                            <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
+                            <h4>Guiding questions</h4>
+                            <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
+                        </div>
+                       <div>
+                        <h3>Process</h3>
+                        <p>Morbi pretium lacus llentesque arcu.
+                        Tempus eget urna eu ornare amet euismod. Diam enim egestas tellus lectus cursus a neque mattis
+                        suspendisse. Neque dignissim aliquet bibendum
+                        parturient faucibus vitae odio lorem enim. Justo auctor quam aliquam platea.</p>
+                       </div>
+                       
+                    </div>
+                   
+                    
+                </div>
                 
-                <h3>(Fake project) Overview</h3>
-                <p>Interdum facilisis risus lobortis a quam vitae tristique. Eu aliquet turpis sed dignissim et faucibus
-                quisque enim sed.
-                Purus erat dolor sed integer aliquam nisl ut condimentum vestibulum.</p><!--Dummytext i paragraf -->
                 
-                <h3>Background</h3>
-                <p>Mollis sit habitasse at feugiat urna faucibus etiam volutpat maecenas. Massa diam
-                commodo at
-                montes aliquet nulla scelerisque eget. At ipsum lobortis tincidunt magna at. Feugiat viverra aliquet sit
-                ipsum justo pretium morbi.</p>
-                <h4>Problem space</h4>
-                <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
-                <h4>Guiding questions</h4>
-                <p>Mollis sit habitasse at. At ipsum lobortis tincidunt magna at.</p>
-                <h3>Process</h3>
-                <p>Morbi pretium lacus llentesque arcu.
-                Tempus eget urna eu ornare amet euismod. Diam enim egestas tellus lectus cursus a neque mattis
-                suspendisse. Neque dignissim aliquet bibendum
-                parturient faucibus vitae odio lorem enim. Justo auctor quam aliquam platea.</p>
             </section>
 
 
@@ -80,7 +94,7 @@
             <p><i class="fa-sharp fa-solid fa-phone"></i> Telefon </p>
 
 
-            <p><i id="linkedin" class="fa-brands fa-linkedin"></i> Linkedin</p>
+            <p><i id="linkedin" class="fa-brands fa-linkedin"></i> LinkedIn</p>
             <p><i id="drib" class="fa-brands fa-dribbble"></i> Dribbble</p>
             <p><i id="insta" class="fa-brands fa-instagram"></i> Instagram</p>
         </div>

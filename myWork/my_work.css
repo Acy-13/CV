@@ -16,15 +16,39 @@ main{
 .project-container{
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 3.5rem;
 }
 .project-container p, .project-container h3, h4{
   margin: 1rem 2rem;
+  text-align: center;
 }
 
 
 img {
   width:70%;
-  margin: auto;
- 
+ margin-bottom: 2rem;
+}
+
+.project-details-container{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+}
+
+.project-details-container h2{
+  align-self: center;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-details div {
+ width: 400px;
 }

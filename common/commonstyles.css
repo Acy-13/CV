@@ -6,12 +6,18 @@ body{
   margin: 0;
 }
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  
+}
+
+
 .navbar {
     width: 100%;
     overflow: auto;
-    position: sticky;
-    top: 0;
-    transition:0.7s;
+    transition:0.7s;  
     background: #f0f8ff;
       }
   
@@ -73,6 +79,13 @@ body{
     color: white;
     text-decoration: none;
   }
+
+
+  img{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+ 
 
   @media screen and (max-width: 576px) {
     .navbar a {
