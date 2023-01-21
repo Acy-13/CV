@@ -1,4 +1,6 @@
-
+header{
+  position: inherit !important;
+}
 
 button{
   width:7rem;
