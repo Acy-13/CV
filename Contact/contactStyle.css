@@ -67,13 +67,11 @@ input[type=text],input[type=email], textarea{
   
 }
 
-#linkedin{
+#linked{
   color:#0072b1;
   
 }
-#social-ikon{
-  background-color: #B2215A;
-}
+
 
 
 #dribb{
@@ -81,7 +79,7 @@ input[type=text],input[type=email], textarea{
   background-color: #E74D89;
   border-radius: 50%;
 }
-#insta{
+#instagram{
   color: #fff;
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
