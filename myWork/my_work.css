@@ -10,7 +10,10 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+main > * {
+ text-align: center;
 }
 
 .project-container{
