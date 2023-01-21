@@ -116,6 +116,7 @@ flex-direction: column;
     justify-content: center;
     align-content: center;
 }
+
 }
 @media screen and (min-width:1200px){
   #treMedier{
