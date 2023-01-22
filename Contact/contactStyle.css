@@ -39,6 +39,7 @@ input[type=submit]{
   padding:1rem 2rem;
   align-items: center;
   border: none;
+  -webkit-appearance: none;
   border-radius: 0;
   width:100%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
